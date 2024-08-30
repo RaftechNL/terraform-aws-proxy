@@ -3,8 +3,10 @@ repos:
     rev: v1.94.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
     hooks:
       - id: terraform_validate
-        # args:
-        #   - --hook-config=--retry-once-with-cleanup=true     # Boolean. true or false
+        args:
+          - --hook-config=--retry-once-with-cleanup=true     # Boolean. true or false
+          - --tf-init-args=-upgrade
+          # - --tf-init-args=-lockfile=readonly
       - id: terraform_fmt
       - id: terraform_docs
         args:

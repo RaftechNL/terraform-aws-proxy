@@ -64,7 +64,7 @@ data "aws_iam_policy_document" "this" {
 
 module "iam_policy_ssm_connect" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
-  version = "v5.30.0"
+  version = "v5.44.0"
 
   name        = "${local.full_service_name}-default"
   path        = "/"

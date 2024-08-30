@@ -21,7 +21,7 @@ Repository containing code for terraform-aws-proxy
 |------|--------|---------|
 | <a name="module_asg"></a> [asg](#module\_asg) | terraform-aws-modules/autoscaling/aws | v6.10.0 |
 | <a name="module_iam_assumable_role_ssm"></a> [iam\_assumable\_role\_ssm](#module\_iam\_assumable\_role\_ssm) | terraform-aws-modules/iam/aws//modules/iam-assumable-role | v5.44.0 |
-| <a name="module_iam_policy_ssm_connect"></a> [iam\_policy\_ssm\_connect](#module\_iam\_policy\_ssm\_connect) | terraform-aws-modules/iam/aws//modules/iam-policy | v5.30.0 |
+| <a name="module_iam_policy_ssm_connect"></a> [iam\_policy\_ssm\_connect](#module\_iam\_policy\_ssm\_connect) | terraform-aws-modules/iam/aws//modules/iam-policy | v5.44.0 |
 
 ## Resources
 
