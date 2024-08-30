@@ -1,6 +1,6 @@
 # terraform-aws-proxy
 Repository containing code for terraform-aws-proxy
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -12,7 +12,7 @@ Repository containing code for terraform-aws-proxy
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | = 5.65.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.65.0 |
 
 ## Modules
 
@@ -58,4 +58,4 @@ Repository containing code for terraform-aws-proxy
 | Name | Description |
 |------|-------------|
 | <a name="output_iam_policy"></a> [iam\_policy](#output\_iam\_policy) | IAM Policy for establishing ssm connection |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
