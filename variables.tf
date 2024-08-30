@@ -4,11 +4,6 @@ variable "app_name" {
   default     = "ssm-proxy"
 }
 
-variable "create" {
-  type        = bool
-  description = "Controls if the resources are created or not"
-}
-
 variable "project" {
   type        = string
   description = "Name of the project"

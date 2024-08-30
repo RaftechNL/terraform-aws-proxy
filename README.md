@@ -6,13 +6,13 @@ Repository containing code for terraform-aws-proxy
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.0.0, <2.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.59 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | = 5.65.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.65.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | = 5.65.0 |
 
 ## Modules
 
@@ -26,13 +26,11 @@ Repository containing code for terraform-aws-proxy
 
 | Name | Type |
 |------|------|
-| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
-| [aws_security_group_rule.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
-| [aws_security_group_rule.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
-| [aws_ami.amazon_linux](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [aws_iam_policy_document.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
+| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/security_group) | resource |
+| [aws_security_group_rule.default](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.this](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/security_group_rule) | resource |
+| [aws_ami.amazon_linux](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/ami) | data source |
+| [aws_iam_policy_document.this](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/iam_policy_document) | data source |
 
 ## Inputs
 
@@ -42,7 +40,6 @@ Repository containing code for terraform-aws-proxy
 | <a name="input_allow_self_assume_role"></a> [allow\_self\_assume\_role](#input\_allow\_self\_assume\_role) | Controls if the role allows self-assume or not | `bool` | `true` | no |
 | <a name="input_ami_filter"></a> [ami\_filter](#input\_ami\_filter) | Defines query params for AMI | <pre>object({<br>    filter_name = string,<br>    owner       = string,<br>  })</pre> | <pre>{<br>  "filter_name": "amzn2-ami-kernel-5.10-hvm-2.0.20220912.1-x86_64-gp2",<br>  "owner": "137112412989"<br>}</pre> | no |
 | <a name="input_app_name"></a> [app\_name](#input\_app\_name) | Name of the application | `string` | `"ssm-proxy"` | no |
-| <a name="input_create"></a> [create](#input\_create) | Controls if the resources are created or not | `bool` | n/a | yes |
 | <a name="input_create_instance_profile"></a> [create\_instance\_profile](#input\_create\_instance\_profile) | Controls if the instance profile is created or not | `bool` | `true` | no |
 | <a name="input_create_role"></a> [create\_role](#input\_create\_role) | Controls if the role is created or not | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Name of the environment (i.e.: prd, acc, dev, test) | `string` | n/a | yes |
@@ -60,5 +57,5 @@ Repository containing code for terraform-aws-proxy
 
 | Name | Description |
 |------|-------------|
-| <a name="output_iam_policy"></a> [iam\_policy](#output\_iam\_policy) | n/a |
+| <a name="output_iam_policy"></a> [iam\_policy](#output\_iam\_policy) | IAM Policy for establishing ssm connection |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

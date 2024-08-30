@@ -8,8 +8,6 @@ locals {
     local.tags_module # Tags locally added
   )
 
-  ssm_app_path = "/app/${var.environment}/${var.project}-${var.app_name}"
-
   tags_module = {
   }
 }

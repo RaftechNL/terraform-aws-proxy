@@ -78,14 +78,3 @@ module "iam_policy_ssm_connect" {
     local.tags_app_module
   )
 }
-
-output "iam_policy" {
-  value = {
-    "default" : {
-      "id" : module.iam_policy_ssm_connect.id,
-      "arn" : module.iam_policy_ssm_connect.arn,
-      "name" : module.iam_policy_ssm_connect.name,
-      "path" : module.iam_policy_ssm_connect.path,
-    }
-  }
-}
