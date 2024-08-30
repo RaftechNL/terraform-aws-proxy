@@ -44,6 +44,7 @@ Repository containing code for terraform-aws-proxy
 | <a name="input_create_instance_profile"></a> [create\_instance\_profile](#input\_create\_instance\_profile) | Controls if the instance profile is created or not | `bool` | `true` | no |
 | <a name="input_create_role"></a> [create\_role](#input\_create\_role) | Controls if the role is created or not | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Name of the environment (i.e.: prd, acc, dev, test) | `string` | n/a | yes |
+| <a name="input_full_service_name"></a> [full\_service\_name](#input\_full\_service\_name) | Full service name | `string` | `""` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The type of instance to start | `string` | `"t3.micro"` | no |
 | <a name="input_project"></a> [project](#input\_project) | Name of the project | `string` | n/a | yes |
 | <a name="input_role_requires_mfa"></a> [role\_requires\_mfa](#input\_role\_requires\_mfa) | Controls if the role requires MFA or not | `bool` | `false` | no |
