@@ -1,5 +1,6 @@
 # terraform-aws-proxy
 Repository containing code for terraform-aws-proxy
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
