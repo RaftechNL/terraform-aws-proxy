@@ -13,7 +13,7 @@ permissions:
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
-    container: ghcr.io/antonbabenko/pre-commit-terraform:v1.79.1
+    container: ghcr.io/antonbabenko/pre-commit-terraform:latest
     steps:
       - uses: actions/checkout@v3
       
