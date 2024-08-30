@@ -17,6 +17,11 @@ variable "environment" {
     error_message = "The environment needs to be in prod, acc, dev, test, preview."
   }
 }
+variable "full_service_name" {
+  type        = string
+  description = "Full service name"
+  default     = ""
+}
 
 variable "tags" {
   type        = map(string)
