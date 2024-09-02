@@ -18,6 +18,7 @@ module "iam_assumable_role_ssm" {
     "ec2.amazonaws.com"
   ]
 
+
   custom_role_policy_arns = concat(
     var.additional_iam_policies,
     [
