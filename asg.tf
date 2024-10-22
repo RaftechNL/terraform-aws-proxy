@@ -30,8 +30,8 @@ module "asg" {
 
   vpc_zone_identifier = var.vpc_zone_identifier # module.vpc.private_subnets
 
-  min_size         = 0
-  max_size         = 3
+  min_size         = 1
+  max_size         = 1
   desired_capacity = 1
 
   # Launch template
